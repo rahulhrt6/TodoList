@@ -147,9 +147,14 @@ app.post("/delete",function(req,res){
 app.get("/work",function(req,res){
   res.render("list",{listTitle:"WorkList",newListItems: workItems});
 });
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
 
 
 
-app.listen(3000, function() {
+app.listen(port, function() {
   console.log("server started at port 3000");
 });

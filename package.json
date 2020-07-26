@@ -8,4 +8,7 @@
   },
   "author": "rahul",
   "license": "ISC"
+  "engines": {
+    "node": "10.x"
+  },
 }
